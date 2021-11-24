@@ -41,8 +41,8 @@ public class CalcolatriceTest {
      * Test of somma method, of class Calcolatrice.
      */
     @Test
-    public void testSomma() {
-        System.out.println("somma");
+    public void testSomma1() {
+        System.out.println("somma1");
         int num1 = 1;
         int num2 = 2;
         Calcolatrice instance = new Calcolatrice();
@@ -50,7 +50,23 @@ public class CalcolatriceTest {
         int result = instance.somma(num1, num2);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
+    }
+    
+    /**
+     * Test of somma method, of class Calcolatrice.
+     */
+    @Test
+    public void testSomma2() {
+        System.out.println("somma2");
+        int num1 = 2;
+        int num2 = 2;
+        Calcolatrice instance = new Calcolatrice();
+        int expResult = 4;
+        int result = instance.somma(num1, num2);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
     }
     
 }
